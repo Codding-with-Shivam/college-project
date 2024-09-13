@@ -1,0 +1,107 @@
+
+.f-body {
+    background-image: url(/cook.jpg);
+    background-size: cover;
+  }
+  
+.container {
+    /* background: linear-gradient(to bottom, #f6d365, #fda085); */
+    background-color: rgba(255, 255, 255, 0.229);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin: 40px auto;
+  }
+  /* .container:hover {
+      background-image: url("/resources/masala.jpg");
+      background-size: cover;
+  } */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 20vw;
+    font-weight: 700;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* rating in form */
+.rating{
+  display: inline-block;
+}
+
+.rating input{
+  display: none;
+}
+
+.rating label{
+  float: right;
+  cursor: pointer;
+  color: #333;
+}
+
+.rating label:before{
+  content: "\2605";
+  font-size: 50px;
+}
+
+.rating input:checked ~ label{
+  color: #ffc110;
+}
+
+  textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 20vw;
+    height: 100px;
+    resize: vertical;
+    font-weight: 700;
+  }
+  
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button[type="submit"] {
+    background: linear-gradient(to bottom, #4caf50, #3e8e41);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background: linear-gradient(to bottom, #3e8e41, #4caf50);
+  }

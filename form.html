@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="form.css" />
+
+</head>
+
+<body class="f-body">
+    <!-- FEEDBACK FORM  -->
+
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="daed8981-bdf2-4849-826c-5fe8367d3447">
+            <h2 style="color:white;
+                font-family: Georgia, 'Times New Roman', Times, serif; ">Feedback</h2>
+            <div class="form-group">
+                <label for="name" style="color:white;
+                    font-size: 20px;
+                    font-family: Georgia, 'Times New Roman', Times, serif;"><b>Name:</b></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" style="color:white;
+                    font-size: 20px;
+                    font-family: Georgia, 'Times New Roman', Times, serif;"><b>Email:</b></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="rating" style="color:white;
+                    font-size: 20px;
+                    font-family: Georgia, 'Times New Roman', Times, serif;"><b>Rating:</b></label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" >
+                    <label for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4" >
+                    <label for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3" >
+                    <label for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2" >
+                    <label for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1" >
+                    <label for="star1"></label>
+                    <div class="score"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="feedback" style="color:white;
+                    font-size: 20px;
+                    font-family: Georgia, 'Times New Roman', Times, serif;"><b>Feedback:</b></label>
+                <textarea id="feedback" name="feedback" required></textarea>
+            </div>
+            <button type="submit"><b>Send Feedback</b></button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
